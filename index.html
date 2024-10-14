@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Sintaxis de JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejemplos Prácticos de JavaScript</h1>
+    <div id="contenido">
+        
+        <h2>Control de Flujo y Manejo de Errores</h2>
+<div>
+   <h3>if...else</h3>
+   <p>Revisa si un número es positivo, negativo o cero.</p>
+   <script>
+       let numero = 5;
+       if (numero > 0) {
+           console.log("El número es positivo.");
+       } else if (numero < 0) {
+           console.log("El número es negativo.");
+       } else {
+           console.log("El número es cero.");
+       }
+   </script>
+
+   <h3>try/catch</h3>
+   <p>Manejo de errores con try catch.</p>
+   <script>
+       try {
+           let x = y + 1; //no está definida
+       } catch (error) {
+           console.log("Se produjo un error: " + error.message);
+       }
+   </script>
+</div>
+
+<h2>Bucles e Iteración</h2>
+<div>
+   <h3>for loop</h3>
+   <p>Imprimir números del 1 al 5.</p>
+   <script>
+       for (let i = 1; i <= 5; i++) {
+           console.log(i);
+       }
+   </script>
+
+   <h3>while loop</h3>
+   <p>Contar hacia atrás desde 5.</p>
+   <script>
+       let i = 5;
+       while (i > 0) {
+           console.log(i);
+           i--;
+       }
+   </script>
+</div>
+
+<h2>Funciones</h2>
+<div>
+   <h3>Definir y llamar una función</h3>
+   <p>Función para sumar dos números.</p>
+   <script>
+       function sumar(a, b) {
+           return a + b;
+       }
+       console.log(sumar(2, 3)); 
+   </script>
+</div>
+
+
+<h2>Expresiones y Operadores</h2>
+<div>
+   <h3>Operadores Aritméticos</h3>
+   <p>Ejemplo de suma y multiplicación.</p>
+   <script>
+       let x = 10;
+       let y = 5;
+       console.log("Suma:", x + y);
+       console.log("Multiplicación:", x * y);
+   </script>
+</div>
+
+<h2>Números y Fechas</h2>
+<div>
+   <h3>Fecha actual</h3>
+   <script>
+       let fecha = new Date();
+       console.log("Fecha actual: " + fecha);
+   </script>
+</div>
+
+<h2>Formateo de Texto</h2>
+<div>
+   <h3>Objeto String</h3>
+   <p>Ejemplo de uso de cadenas literales y métodos de string.</p>
+   <script>
+       let saludo = "Hola, Mundo!";
+       console.log(saludo.toUpperCase());
+   </script>
+</div>
+
+<h2>Colecciones Indexadas</h2>
+<div>
+   <h3>Arreglo</h3>
+   <p>Crear un arreglo y acceder a sus elementos.</p>
+   <script>
+       let numeros = [10, 20, 30, 40];
+       console.log("Primer número:", numeros[0]);
+   </script>
+</div>
+
+<h2>Manipulación del DOM</h2>
+<div>
+   <h3>Encontrar elementos por ID</h3>
+   <p>Modificar el contenido de un elemento HTML.</p>
+   <div id="demo">Este texto cambiará</div>
+   <script>
+       document.getElementById("demo").innerText = "¡Texto cambiado!";
+   </script>
+</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
